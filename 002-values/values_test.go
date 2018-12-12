@@ -1,14 +1,16 @@
 package main
 
-import "testing"
+import (
+	"testing"
+)
 
-func testSumString(t *testing.T) {
+func TestSumString(t *testing.T) {
 	if "golang" != SumString("go", "lang") {
 		t.Fatal("Test Fail")
 	}
 }
 
-func testSumInt(t *testing.T) {
+func TestSumInt(t *testing.T) {
 	if 2 != SumInt(1, 1) {
 		t.Fatal("Test Fail")
 	}
@@ -18,26 +20,26 @@ func testSumInt(t *testing.T) {
 	}
 }
 
-func testDivideInt(t *testing.T) {
+func TestDivideInt(t *testing.T) {
 	if 5 != DivideInt(25, 5) {
 		t.Fatal("Test Fail")
 	}
 }
 
-func testAnd(t *testing.T) {
-	if !And(true, false) {
+func TestAnd(t *testing.T) {
+	if false != And(true, false) {
 		t.Fatal("Test Fail")
 	}
 }
 
-func testOr(t *testing.T) {
-	if !Or(true, false) {
+func TestOr(t *testing.T) {
+	if true != Or(true, false) {
 		t.Fatal("Test Fail")
 	}
 }
 
-func testNot(t *testing.T) {
-	if !Not(true) {
+func TestNot(t *testing.T) {
+	if false != Not(true) {
 		t.Fatal("Test Fail")
 	}
 }

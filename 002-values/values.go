@@ -30,5 +30,7 @@ func main() {
 	fmt.Println(SumString("go", "lang"))
 	fmt.Println(SumInt(1, 1))
 	fmt.Println(DivideInt(24, 5))
-
+	fmt.Println(And(true, false))
+	fmt.Println(Or(true, false))
+	fmt.Println(Not(true))
 }
